@@ -87,7 +87,7 @@ export const HeaderContainer = styled.div`
 
 
 export const LogoImage = styled.img`
-    height: 220px;  /* Tamanho adequado para logo */
+    height: 240px;  /* Tamanho adequado para logo */
     width: auto;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));  /* Adiciona sombra para destacar */
     transition: transform 0.3s ease-in-out;
@@ -117,7 +117,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     color: #FFFFFF;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     cursor: pointer;
     font-weight: 500;
     display: flex;
@@ -155,10 +155,12 @@ export const MainTitle = styled.h1`
     @media (max-width: 768px) {
         font-size: 2rem;
         margin-top: 0;
+        margin-top: 32px;
     }
 
     @media (max-width: 480px) {
         font-size: 1.6rem;
+        margin-top: 32px;
     }
 `;
 
