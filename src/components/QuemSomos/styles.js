@@ -86,13 +86,17 @@ export const QuemSomosGrid = styled.div`
 `;
 
 export const QuemSomosCard = styled.div`
-    background-color: #1C1C1C;
+    background-color: #f5f8fb;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 300px;
     flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: translateY(-10px);
+    }
 
     @media (max-width: 768px) {
         max-width: 100%;
@@ -102,7 +106,7 @@ export const QuemSomosCard = styled.div`
 export const CardTitle = styled.h3`
     font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #FFD700;
+    color: #0A2E65;
 
     @media (max-width: 768px) {
         font-size: 1.4rem;
@@ -111,7 +115,7 @@ export const CardTitle = styled.h3`
 
 export const CardText = styled.p`
     font-size: 1.2rem;
-    color: #e0e0e0;
+    color: #555;
     line-height: 1.6;
 
     @media (max-width: 768px) {
