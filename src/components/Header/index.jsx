@@ -20,7 +20,8 @@ import {
 } from "./styles";
 import Logo from "../../assets/Logo.png"; // Substitua pelo caminho correto do seu logo
 import BackgroundImage from "../../assets/HarboarHeader.jpg"; // Imagem de fundo
-import { FaBars } from "react-icons/fa"; // Ícone de menu (hambúrguer)
+import { Bars3Icon } from "@heroicons/react/24/outline";  // Ícone de menu alternativo
+
 import {
     FaHome,
     FaServicestack,
@@ -38,20 +39,20 @@ const Header = () => {
 
     return (
         <Layout>
-            <HeaderSection backgroundImage={BackgroundImage}>
+            <HeaderSection $backgroundImage={BackgroundImage}>
                 <Overlay>
                     <Nav>
                         <HeaderContainer>
                             <LogoImage src={Logo} alt="Logo" />
                             <MenuButton onClick={toggleMenu}>
-                                <FaBars />
+                                <Bars3Icon style={{ width: '32px', height: '32px' }} />
                             </MenuButton>
                             <NavMenu>
                                 <NavItem>
                                     <FaHome /> Início
                                 </NavItem>
                                 <NavItem>
-                                    <FaServicestack />Contábeis
+                                    <FaServicestack /> Contábeis
                                 </NavItem>
                                 <NavItem>
                                     <FaUsers /> Clientes
@@ -65,25 +66,24 @@ const Header = () => {
                             </NavMenu>
                         </HeaderContainer>
                     </Nav>
-                    <MainTitle>Excelência Contábil</MainTitle>
+                    <MainTitle>Sua Contabilidade, Nosso Compromisso</MainTitle>
                     <SubTitle>
-                        Soluções contábeis inovadoras para impulsionar o sucesso do seu
-                        negócio.
+                        Transformando números em estratégias para o sucesso do seu negócio.
                     </SubTitle>
                     <ButtonGroup>
-                        <Button primary>Descubra Nossos Serviços</Button>
-                        <Button primary>Solicite um Orçamento</Button>
+                        <Button >Descubra Nossos Serviços</Button>
+                        <Button >Solicite um Orçamento</Button>
                     </ButtonGroup>
                 </Overlay>
             </HeaderSection>
 
-            <Aside isOpen={isMenuOpen}>
+            <Aside $isOpen={isMenuOpen}>
                 <AsideMenu>
                     <AsideItem onClick={toggleMenu}>
                         <FaHome /> Início
                     </AsideItem>
                     <AsideItem onClick={toggleMenu}>
-                        <FaServicestack />Contábeis
+                        <FaServicestack /> Contábeis
                     </AsideItem>
                     <AsideItem onClick={toggleMenu}>
                         <FaUsers /> Clientes
@@ -97,7 +97,8 @@ const Header = () => {
                 </AsideMenu>
             </Aside>
 
-            <SideOverlay isOpen={isMenuOpen} onClick={toggleMenu} />
+            <SideOverlay $isOpen={isMenuOpen} onClick={toggleMenu} />
+
         </Layout>
     );
 };
