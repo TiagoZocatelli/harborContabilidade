@@ -73,7 +73,7 @@ export const FormTitle = styled.h2`
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #004D61;
+    color: rgba(10, 25, 47, 0.85);;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 

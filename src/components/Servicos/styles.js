@@ -9,7 +9,7 @@ export const ServicosSection = styled.section`
 
 export const Title = styled.h2`
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: bold;
     color: #0A2E65;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -33,7 +33,7 @@ export const ServicesList = styled.div`
 
 export const ServiceCard = styled.div`
     background-color: #ffffff;
-    padding: 30px;
+    padding: 12px;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

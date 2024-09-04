@@ -9,6 +9,7 @@ export const ClientesSection = styled.section`
     justify-content: center;
     align-items: center;
     text-align: center;
+    
     font-family: 'Poppins', sans-serif;
 
     @media (max-width: 768px) {
@@ -26,7 +27,7 @@ export const ContentContainer = styled.div`
 // Título da seção
 export const Title = styled.h2`
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: bold;
     color: #0A2E65;
     margin-bottom: 40px;
     text-transform: uppercase;

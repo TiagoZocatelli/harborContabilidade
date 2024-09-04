@@ -4,10 +4,6 @@ import {
     QuemSomosDescription,
     Highlight,
     QuemSomosContainer,
-    QuemSomosGrid,
-    QuemSomosCard,
-    CardTitle,
-    CardText,
 } from "./styles"; // Importando os estilos do styles.js
 import { FaEye, FaBullseye, FaHandshake } from 'react-icons/fa';
 
@@ -23,28 +19,7 @@ const QuemSomos = () => {
             </QuemSomosDescription>
 
             <QuemSomosContainer>
-                <QuemSomosGrid>
-                    <QuemSomosCard>
-                        <CardTitle> <FaBullseye fontSize={25} /> Missão</CardTitle>
-                        <CardText>
-                            Garantir serviços contábeis eficientes e personalizados que impulsionam o crescimento das empresas.
-                        </CardText>
-                    </QuemSomosCard>
-                    <QuemSomosCard>
-                        <CardTitle>
-                            <FaEye fontSize={25} /> Visão
-                        </CardTitle>
-                        <CardText>
-                            Ser referência em contabilidade empresarial, reconhecida pela qualidade, inovação e confiabilidade dos nossos serviços.
-                        </CardText>
-                    </QuemSomosCard>
-                    <QuemSomosCard>
-                        <CardTitle><FaHandshake fontSize={25} /> Valores</CardTitle>
-                        <CardText>
-                            Transparência, comprometimento, ética profissional e busca contínua por soluções que agreguem valor aos nossos clientes.
-                        </CardText>
-                    </QuemSomosCard>
-                </QuemSomosGrid>
+        
             </QuemSomosContainer>
         </QuemSomosSection>
     );

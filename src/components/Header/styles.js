@@ -24,7 +24,7 @@ export const Layout = styled.div`
 
 export const HeaderSection = styled.header`
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background: url(${(props) => props.$backgroundImage}) no-repeat center center;
     background-size: cover;
     position: relative;
