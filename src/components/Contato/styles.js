@@ -33,6 +33,7 @@ export const ContatoSection = styled.section`
 export const FormContainer = styled.div`
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(245, 245, 245, 0.95));
     padding: 30px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     max-width: 380px; /* Diminuí o tamanho máximo do formulário */
@@ -52,6 +53,7 @@ export const FormContainer = styled.div`
             transform: translateY(0);
         }
     }
+    
 
     @media (max-width: 1024px) {
         margin-right: 0;
@@ -103,26 +105,7 @@ export const Input = styled.input`
     }
 `;
 
-export const TextArea = styled.textarea`
-    width: 100%;
-    padding: 12px;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    font-size: 0.9rem;
-    font-family: 'Roboto', sans-serif;
-    transition: all 0.3s ease;
-    height: 120px; /* Reduzi a altura do TextArea */
-    resize: none;
-    outline: none;
 
-    &:focus {
-        border-color: #DAA520;
-        background-color: rgba(255, 255, 255, 1);
-        box-shadow: 0 0 10px rgba(16, 44, 87, 0.5);
-    }
-`;
 
 export const SubmitButton = styled.button`
     width: 100%;
@@ -134,6 +117,7 @@ export const SubmitButton = styled.button`
     font-weight: 600;
     border: none;
     border-radius: 8px;
+    margin-top: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);

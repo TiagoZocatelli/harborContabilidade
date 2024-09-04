@@ -19,7 +19,7 @@ const Servicos = () => {
             <ServicesList>
                 <ServiceCard>
                     <FaBuilding size={50} color="#DAA520" />
-                    <ServiceTitle>Criação de Empresas</ServiceTitle>
+                    <ServiceTitle>Abertura de Empresas</ServiceTitle>
                     <ServiceDescription>
                         Ajudamos você a estabelecer sua empresa de forma eficiente e dentro das normas legais, com assessoria desde o planejamento inicial até a formalização completa.
                     </ServiceDescription>
@@ -40,7 +40,7 @@ const Servicos = () => {
                 </ServiceCard>
                 <ServiceCard>
                     <FaUsers size={50} color="#DAA520" />
-                    <ServiceTitle>Recursos Humanos (RH)</ServiceTitle>
+                    <ServiceTitle>Departamento Pessoal</ServiceTitle>
                     <ServiceDescription>
                         Cuidamos de toda a gestão de pessoas, folha de pagamento, contratações, benefícios e cumprimento das obrigações trabalhistas.
                     </ServiceDescription>

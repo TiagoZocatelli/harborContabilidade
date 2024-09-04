@@ -4,7 +4,6 @@ import {
     FormTitle,
     InputGroup,
     Input,
-    TextArea,
     SubmitButton,
     ContactMessage,
     Highlight
@@ -36,9 +35,6 @@ const Contato = () => {
                 </InputGroup>
                 <InputGroup>
                     <Input type="text" placeholder="Segmento da Empresa" />
-                </InputGroup>
-                <InputGroup>
-                    <TextArea placeholder="Sua Mensagem"></TextArea>
                 </InputGroup>
                 <SubmitButton>Enviar</SubmitButton>
             </FormContainer>

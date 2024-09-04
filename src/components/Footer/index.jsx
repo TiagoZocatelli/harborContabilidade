@@ -62,7 +62,7 @@ const Footer = () => {
             <FooterTitle>Email</FooterTitle>
             <FooterInfo>
               <EmailLink
-                href="mailto:harborcontabilidade@gmail.com"
+                href="mailto:douglas@harborcontabilidade.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Clique para enviar um email"
