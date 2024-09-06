@@ -6,43 +6,48 @@ import {
     ServiceCard,
     ServiceTitle,
     ServiceDescription,
+    Icon,
+    TitleIconWrapper,
 } from "./styles"; // Importando os estilos do styles.js
-import { FaBuilding, FaFileInvoice, FaCalculator, FaUsers } from "react-icons/fa"; // Ícones
+import { FaBuilding, FaFileInvoice, FaCalculator, FaUsers, FaBriefcase } from "react-icons/fa"; // Ícones
 
 const Servicos = () => {
     return (
         <ServicosSection>
-            <Title>Nossos Serviços</Title>
+            <TitleIconWrapper>
+                <FaBriefcase size={50} color="#DAA520" />
+                <Title>Nossos Serviços</Title>
+            </TitleIconWrapper>
             <Description>
-                Oferecemos uma gama completa de serviços que abrangem desde a criação de empresas, gestão fiscal, contábil e RH, ajudando sua empresa a crescer com eficiência e segurança.
+                Oferecemos uma gama completa de serviços especializados para atender todas as suas necessidades empresariais com eficiência e profissionalismo. Descubra como podemos ajudar a sua empresa a crescer.
             </Description>
             <ServicesList>
                 <ServiceCard>
-                    <FaBuilding size={50} color="#DAA520" />
+                    <Icon><FaBuilding size={50} /></Icon>
                     <ServiceTitle>Abertura de Empresas</ServiceTitle>
                     <ServiceDescription>
-                        Ajudamos você a estabelecer sua empresa de forma eficiente e dentro das normas legais, com assessoria desde o planejamento inicial até a formalização completa.
+                        Facilite o início do seu negócio com nossa consultoria especializada. Cuidamos de todos os detalhes legais e burocráticos para que você possa focar no crescimento da sua empresa.
                     </ServiceDescription>
                 </ServiceCard>
                 <ServiceCard>
-                    <FaFileInvoice size={50} color="#DAA520" />
+                    <Icon><FaFileInvoice size={50} /></Icon>
                     <ServiceTitle>Gestão Fiscal</ServiceTitle>
                     <ServiceDescription>
-                        Mantemos suas obrigações fiscais em dia, garantindo o cumprimento das regulamentações e maximizando os benefícios fiscais para sua empresa.
+                        Mantenha sua empresa em conformidade com as leis fiscais. Oferecemos serviços completos para gestão de impostos, aproveitando benefícios fiscais e garantindo a regularidade fiscal.
                     </ServiceDescription>
                 </ServiceCard>
                 <ServiceCard>
-                    <FaCalculator size={50} color="#DAA520" />
+                    <Icon><FaCalculator size={50} /></Icon>
                     <ServiceTitle>Contabilidade</ServiceTitle>
                     <ServiceDescription>
-                        Oferecemos serviços contábeis completos, desde o balanço patrimonial até o planejamento tributário, garantindo clareza e precisão nas finanças da sua empresa.
+                        Nossos serviços contábeis são projetados para proporcionar clareza e precisão financeira. Desde a elaboração de balanços até o planejamento tributário, cuidamos de todas as suas necessidades contábeis.
                     </ServiceDescription>
                 </ServiceCard>
                 <ServiceCard>
-                    <FaUsers size={50} color="#DAA520" />
+                    <Icon><FaUsers size={50} /></Icon>
                     <ServiceTitle>Departamento Pessoal</ServiceTitle>
                     <ServiceDescription>
-                        Cuidamos de toda a gestão de pessoas, folha de pagamento, contratações, benefícios e cumprimento das obrigações trabalhistas.
+                        Gerencie sua equipe com eficiência. Cuidamos de todos os aspectos da gestão de pessoal, incluindo folha de pagamento, contratações e conformidade com as leis trabalhistas.
                     </ServiceDescription>
                 </ServiceCard>
             </ServicesList>

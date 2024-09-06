@@ -17,9 +17,10 @@ import {
     AsideMenu,
     AsideItem,
     SideOverlay,
+    LogoAside
 } from "./styles";
 import Logo from "../../assets/Logo.png"; // Substitua pelo caminho correto do seu logo
-import BackgroundImage from "../../assets/HarboarHeader.jpg"; // Imagem de fundo
+import BackgroundImage from "../../assets/HarboarHeader4.jpg"; // Imagem de fundo
 import { Bars3Icon } from "@heroicons/react/24/outline";  // Ícone de menu alternativo
 
 import {
@@ -79,6 +80,7 @@ const Header = () => {
 
             <Aside $isOpen={isMenuOpen}>
                 <AsideMenu>
+                    <LogoAside src={Logo} alt="Logo"/>
                     <AsideItem onClick={toggleMenu}>
                         <FaHome /> Início
                     </AsideItem>
