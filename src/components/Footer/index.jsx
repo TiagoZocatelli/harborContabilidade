@@ -11,7 +11,6 @@ import {
   WhatsAppIcon,
   AddressLink,
   EmailLink,
-  FooterBottom // Novo estilo para o rodapé inferior
 } from './styles';
 
 const Footer = () => {
@@ -89,11 +88,6 @@ const Footer = () => {
           </FooterSection>
         </FooterContainer>
       </FooterWrapper>
-
-      {/* Novo rodapé com os direitos reservados */}
-      <FooterBottom>
-        Desenvolvido por Tiago Henrique Zocatelli - Todos os direitos reservados
-      </FooterBottom>
     </>
   );
 };
