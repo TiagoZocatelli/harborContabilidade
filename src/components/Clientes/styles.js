@@ -5,6 +5,7 @@ export const ClientesSection = styled.section`
     background-color: #ffffff;  /* Fundo branco */
     padding: 100px 20px;
     display: flex;
+    height: 110vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,6 +14,7 @@ export const ClientesSection = styled.section`
     font-family: 'Poppins', sans-serif;
 
     @media (max-width: 768px) {
+        height: auto;
         padding: 80px 15px;
     }
 `;
@@ -26,15 +28,14 @@ export const ContentContainer = styled.div`
 
 // Título da seção
 export const Title = styled.h2`
-    font-size: 2.8rem;  /* Aumentado ligeiramente para mais impacto */
-    font-weight: 700;
+    font-size: 2.2rem;  /* Aumentado ligeiramente para mais impacto */
+    font-weight: bold;
     color: #0A2E65;  /* Azul mais suave */
     margin-bottom: 50px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
 
     @media (max-width: 768px) {
-        font-size: 2.3rem;
+        font-size: 2rem;
         margin-bottom: 40px;
     }
 `;
@@ -77,7 +78,7 @@ export const StatsContainer = styled.div`
 // Cartão de estatísticas individuais
 export const StatCard = styled.div`
     background-color: #f9f9f9;  /* Fundo claro e limpo */
-    padding: 20px 30px;
+    padding: 10px 30px;
     border-radius: 15px;  /* Bordas mais suaves */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);  /* Sombra leve para profundidade */
     text-align: center;
