@@ -11,7 +11,9 @@ const App = () => {
   return (
     <div>
       <GlobalStyle />
-      <Header />
+       <div id="header">
+       <Header />
+       </div>
       <div id="servicos">
         <Servicos />
       </div>
@@ -21,7 +23,7 @@ const App = () => {
       <div id="clientes">
         <Cliente />
       </div>
-      <div id="contato">
+      <div id="orcamento">
         <Contato />
       </div >
       <div id="contato">

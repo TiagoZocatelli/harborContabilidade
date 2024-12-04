@@ -20,7 +20,7 @@ import {
   LogoAside,
 } from "./styles";
 import Logo from "../../assets/Logo.png"; // Substitua pelo caminho correto do seu logo
-import BackgroundImage from "../../assets/HarboarHeader4.jpg"; // Imagem de fundo
+import BackgroundImage from "../../assets/HarboarHeader.jpg"; // Imagem de fundo
 import { Bars3Icon } from "@heroicons/react/24/outline"; // Ícone de menu alternativo
 
 import {
@@ -51,7 +51,9 @@ const Header = () => {
               </MenuButton>
               <NavMenu>
                 <NavItem>
-                  <FaHome /> Início
+                  <Link to="header" smooth={true} duration={500}>
+                    <FaHome /> Início
+                  </Link>
                 </NavItem>
                 <NavItem>
                   <Link to="servicos" smooth={true} duration={500}>
