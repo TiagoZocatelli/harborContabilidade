@@ -1,4 +1,4 @@
-import { FaInstagram, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa'; // Importando ícones
+import { FaInstagram, FaMapMarkerAlt, FaEnvelope, FaPhone, FaClock } from 'react-icons/fa'; // Adicionando ícones extras
 import {
   FooterWrapper,
   FooterSection,
@@ -19,6 +19,7 @@ const Footer = () => {
     <>
       <FooterWrapper>
         <FooterContainer>
+          {/* Endereço */}
           <FooterSection>
             <FooterTitle>Endereço</FooterTitle>
             <FooterInfo>
@@ -28,14 +29,15 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 title="Clique para ver o endereço no Google Maps"
               >
-                <FaMapMarkerAlt fontSize={25}/> Edifício Monumental - Av. Carneiro Leão, 294 <br />
+                <FaMapMarkerAlt fontSize={25} /> Edifício Monumental - Av. Carneiro Leão, 294 <br />
                 Sala 1505 - Zone 1, Maringá - PR, 87014-010
-              </AddressLink> 
+              </AddressLink>
             </FooterInfo>
           </FooterSection>
 
           <Divider />
 
+          {/* Contato */}
           <FooterSection>
             <FooterTitle>Contato</FooterTitle>
             <FooterInfo>
@@ -49,30 +51,34 @@ const Footer = () => {
               </WhatsAppLink>
             </FooterInfo>
             <FooterInfo>
-              (Horário de atendimento: 7:30 às 17:30 <br />
-              Segunda a Sexta) <br />
+              <FaPhone /> (44) 3354-2845 
+            </FooterInfo>
+            <FooterInfo>
+              <FaClock /> Atendimento: 7:30 às 17:30 (Segunda a Sexta)
             </FooterInfo>
           </FooterSection>
 
           <Divider />
 
+          {/* Email */}
           <FooterSection>
             <FooterTitle>Email</FooterTitle>
-              <EmailLink
-                href="mailto:douglas@harborcontabilidade.com.br"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Clique para enviar um email"
-              >
-                <FaEnvelope /> harborcontabilidade <br />
-              </EmailLink>
-              <FooterInfo>
+            <EmailLink
+              href="mailto:douglas@harborcontabilidade.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Clique para enviar um email"
+            >
+              <FaEnvelope /> Harbor Contabilidade
+            </EmailLink>
+            <FooterInfo>
               (Clique para enviar uma mensagem via E-Mail)
             </FooterInfo>
           </FooterSection>
 
           <Divider />
 
+          {/* Redes Sociais */}
           <FooterSection>
             <FooterTitle>Novidades</FooterTitle>
             <InstagramLink 
@@ -81,7 +87,7 @@ const Footer = () => {
               rel="noopener noreferrer" 
               title="Clique para visitar nosso perfil no Instagram"
             >
-              <FaInstagram fontSize={25}/> harbor_contabilidade
+              <FaInstagram fontSize={25} /> @harbor_contabilidade
             </InstagramLink>
             <FooterInfo>(Clique para ver as novidades no Instagram)</FooterInfo>
           </FooterSection>

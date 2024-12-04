@@ -21,7 +21,7 @@ const App = () => {
       <div id="clientes">
         <Cliente />
       </div>
-      <div id="orcamento">
+      <div id="contato">
         <Contato />
       </div >
       <div id="contato">
