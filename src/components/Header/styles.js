@@ -17,12 +17,11 @@ export const Layout = styled.div`
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    background-color: #0D0D0D; /* Fundo mais escuro puxando para o preto */
+    background: linear-gradient(135deg, #0A2E65, #102C57); /* Gradiente de fundo */
     color: #ffffff;
 
-
     @media (max-width: 768px) {
-        height: 100vh;
+        height: auto;
     }
 `;
 export const HeaderSection = styled.header`
@@ -65,50 +64,36 @@ export const Overlay = styled.div`
 
 export const Nav = styled.nav`
     width: 100%;
-    padding: 20px;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media (max-width: 768px) {
-        padding: 15px 20px;
-    }
 `;
 export const HeaderContainer = styled.div`
-    font-family: 'Poppins', sans-serif;  /* Fonte personalizada */
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente o conteúdo */
-    align-items: center;  /* Centraliza verticalmente o conteúdo */
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza o container no meio da tela */
-    position: relative;
-    z-index: 5;
+    width: 100%;
+    margin: 0 auto;
 
     @media (max-width: 768px) {
-        justify-content: center;  /* Garante que o logo esteja centralizado em telas menores */
-        margin-right: 0;  /* Remove o espaço extra à direita em telas menores */
+        justify-content: center;
     }
 `;
 
+
 export const LogoImage = styled.img`
-    height: 240px;
+    height: 250px;
     width: auto;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-    z-index: 10;
+    transition: transform 0.3s ease;
 
     @media (max-width: 768px) {
-        height: 260px;
-        margin-bottom: 16px;
-    }
-
-    @media (max-width: 480px) {
-        height: 260px;
+        height: 160px;
     }
 `;
 
@@ -116,7 +101,7 @@ export const NavMenu = styled.ul`
     display: flex;
     list-style: none;
     gap: 30px;
-    margin-left: auto; /* Move os itens do menu para a direita */
+    margin-left: auto;
 
     @media (max-width: 768px) {
         display: none;
@@ -174,45 +159,33 @@ export const NavItem = styled.li`
 export const MainTitle = styled.h1`
     font-family: 'Poppins', sans-serif;
     color: #DAA520;
-    font-size: 3rem;
-    font-weight: 800;  /* Um pouco menos pesado para suavizar o visual */
+    font-size: 3.5rem;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 100px;
     text-transform: uppercase;
-    letter-spacing: 2px;  /* Menor espaçamento entre letras */
-    line-height: 1.3;  /* Altura de linha mais espaçada para melhorar a leitura */
-    animation: ${fadeIn} 1.5s ease;  /* Animação de fade-in com transição mais neutra */
+    animation: ${fadeIn} 1.5s ease;
 
     @media (max-width: 768px) {
-        font-size: 1.1rem;
-        padding: 6px;
-        margin-top: 50px;
-    }
-
-    @media (max-width: 380px) {
-        margin-top: 120px;
+        font-size: 1.8rem;
+        margin-top: 20px;
     }
 `;
 
 export const SubTitle = styled.p`
     font-family: 'Poppins', sans-serif;
-    color: #f0f0f0;
-    font-size: 1.8rem;  /* Tamanho de fonte ligeiramente maior para mais legibilidade */
+    color: #e0e0e0;
+    font-size: 1.6rem;
     text-align: center;
-    max-width: 700px;  /* Um pouco mais estreito para centralizar melhor o texto */
-    margin: 20px auto 50px;  /* Ajustei o espaçamento para centralizar melhor */
-    font-weight: 300;  /* Fonte mais leve para dar um toque mais suave */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);  /* Sombra de texto um pouco mais suave */
-    line-height: 1.6;  /* Melhor espaçamento entre linhas para legibilidade */
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
 
     @media (max-width: 768px) {
-        padding: 8px;
-        font-size: 0.9rem;  /* Mantém o texto legível em telas pequenas */
-        line-height: 1.4;
-        margin-bottom: 25px; /* Ajuste para melhor leitura em telas menores */
+        font-size: 1.2rem;
     }
 `;
+
 
 export const ButtonGroup = styled.div`
     display: flex;
@@ -220,7 +193,6 @@ export const ButtonGroup = styled.div`
     justify-content: center;
 
     @media (max-width: 480px) {
-        margin-top: 16px;
         flex-direction: column;
         gap: 10px;
     }
@@ -228,40 +200,29 @@ export const ButtonGroup = styled.div`
 
 export const Button = styled.button`
     font-family: 'Poppins', sans-serif;
-    padding: 16px 45px;  /* Aumentei um pouco o padding para um visual mais robusto */
-    font-size: 1.2rem;  /* Aumentei a fonte para mais impacto */
+    padding: 14px 40px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
-    background-color: #DAA520;  /* Um tom de preto mais suave para dar mais profundidade */
-    border: 2px solid transparent;  /* Borda sutil para um visual mais clean */
-    border-radius: 16px;  /* Bordas mais arredondadas para um visual moderno */
+    background: linear-gradient(145deg, #DAA520, #DAA520);
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 64px;
 
     &:hover {
-        background-color: #444;  /* Leve clareamento no hover */
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Sombra mais pronunciada no hover */
-        transform: translateY(-3px);  /* Elevação suave no hover */
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
 
     &:active {
-        background-color: #1a1a1a;  /* Fundo mais escuro no clique */
-        transform: translateY(0);  /* Remove a elevação ao clicar */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* Sombra reduzida no clique */
-    }
-
-    &:focus {
-        outline: none;
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);  /* Realce mais forte ao focar */
+        transform: translateY(2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     @media (max-width: 768px) {
-        padding: 14px 40px;
-        font-size: 1.1rem;
-        margin-top: 8px;
-        padding: 8px 40px;
+        font-size: 1rem;
     }
 `;
 
@@ -293,7 +254,7 @@ export const Aside = styled.aside`
     left: ${(props) => (props.$isOpen ? '0' : '-100%')};
     width: 280px;  /* Largura ajustada para um layout compacto */
     height: 100vh;
-    background-color: #1E1E1E;  /* Preto suave para elegância */
+    background: linear-gradient(135deg, #0a2e65, #0a2e65); /* Gradiente com base na cor principal */
     padding: 40px 30px;
     transition: left 0.3s ease, box-shadow 0.3s ease;
     z-index: 1200;
@@ -307,9 +268,6 @@ export const Aside = styled.aside`
     border-left: 2px solid rgba(255, 255, 255, 0.1);
     border-right: 2px solid rgba(255, 255, 255, 0.1);
 
-    /* Adicionando um gradiente sutil para profundidade */
-    background: linear-gradient(135deg, #1E1E1E, #292929);
-
     @media (max-width: 768px) {
         width: 250px;  /* Ajuste para telas menores */
         padding: 30px 15px;
@@ -320,7 +278,6 @@ export const Aside = styled.aside`
         padding: 20px 10px;
     }
 `;
-
 
 export const AsideMenu = styled.ul`
     list-style: none;
@@ -334,24 +291,29 @@ export const AsideMenu = styled.ul`
 export const LogoAside = styled.img`
     width: 100%;
     height: auto;
-`
+`;
 
 export const AsideItem = styled.li`
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
     color: #FFFFFF;  /* Branco puro para o texto */
     font-size: 1.2rem;  /* Fonte maior para maior impacto */
     font-weight: 700;  /* Mais negrito para destaque */
     cursor: pointer;
     position: relative;
-    background: linear-gradient(135deg, #1C1C1E, #2C2C2E);  /* Fundo com gradiente suave */
+    background: #0a2e65;  /* Fundo com a cor principal */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
     gap: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  /* Sombra forte para profundidade */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
 
+    &:hover {
+        background: #0d3c89; /* Leve clareamento no hover */
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
 `;
 
 export const SideOverlay = styled.div`

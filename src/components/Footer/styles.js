@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { FaWhatsapp } from 'react-icons/fa';
 
 export const FooterWrapper = styled.footer`
-  background-color: #F1F5F8;
+  background-color: #f0f0f5;
   padding: 30px 20px;
   display: flex;
   justify-content: center;
@@ -23,10 +23,11 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1100px;
+  max-width: 1500px;
   width: 100%;
   justify-content: space-between;
   gap: 50px;
+  margin-bottom: 200px;
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -40,7 +41,7 @@ export const FooterSection = styled.div`
   max-width: 350px; /* Evita que a seção cresça demais */
 
   @media (max-width: 768px) {
-    margin-bottom: 30px;
+
     flex-basis: 100%;
     max-width: 100%; /* Garante que ocupe 100% no mobile */
   }
@@ -65,7 +66,7 @@ export const FooterInfo = styled.p`
   line-height: 1.6;
   color: #333;
   margin-bottom: 8px;
-
+  margin-top: 16px;
   @media (max-width: 768px) {
     font-size: 0.95rem;
     margin-bottom: 12px;
@@ -186,7 +187,7 @@ export const Divider = styled.div`
   width: 100%;
   height: 1px;
   background-color: #ccc;
-  margin: 15px 0;
+  margin: 6px 0;
 
   @media (max-width: 768px) {
     display: block;
@@ -194,10 +195,13 @@ export const Divider = styled.div`
 `;
 
 export const FooterBottom = styled.div`
-  background-color: #102C57;
-  color: #fff;
+  color: #102C57;
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
   font-family: 'Poppins', sans-serif;
+
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
 `;

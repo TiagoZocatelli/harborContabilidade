@@ -11,6 +11,7 @@ import {
   WhatsAppIcon,
   AddressLink,
   EmailLink,
+  FooterBottom,
 } from './styles';
 
 const Footer = () => {
@@ -31,7 +32,6 @@ const Footer = () => {
                 Sala 1505 - Zone 1, Maringá - PR, 87014-010
               </AddressLink> 
             </FooterInfo>
-            <FooterInfo>(Clique para abrir no Google Maps)</FooterInfo>
           </FooterSection>
 
           <Divider />
@@ -49,9 +49,8 @@ const Footer = () => {
               </WhatsAppLink>
             </FooterInfo>
             <FooterInfo>
-              Horário de atendimento: 7:30 às 17:30 <br />
-              Segunda a Sexta <br />
-              (Clique para enviar uma mensagem no WhatsApp)
+              (Horário de atendimento: 7:30 às 17:30 <br />
+              Segunda a Sexta) <br />
             </FooterInfo>
           </FooterSection>
 
@@ -59,7 +58,6 @@ const Footer = () => {
 
           <FooterSection>
             <FooterTitle>Email</FooterTitle>
-            <FooterInfo>
               <EmailLink
                 href="mailto:douglas@harborcontabilidade.com.br"
                 target="_blank"
@@ -68,6 +66,7 @@ const Footer = () => {
               >
                 <FaEnvelope /> harborcontabilidade <br />
               </EmailLink>
+              <FooterInfo>
               (Clique para enviar uma mensagem via E-Mail)
             </FooterInfo>
           </FooterSection>
@@ -87,6 +86,14 @@ const Footer = () => {
             <FooterInfo>(Clique para ver as novidades no Instagram)</FooterInfo>
           </FooterSection>
         </FooterContainer>
+
+        {/* Seção de Política de Privacidade e Direitos Reservados */}
+        <FooterBottom>
+          <p>
+            Política de Privacidade <br />
+            Todos os direitos reservados © {new Date().getFullYear()} Harbor Contabilidade
+          </p>
+        </FooterBottom>
       </FooterWrapper>
     </>
   );

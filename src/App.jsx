@@ -11,12 +11,22 @@ const App = () => {
   return (
     <div>
       <GlobalStyle />
-        <Header />
+      <Header />
+      <div id="servicos">
         <Servicos />
-        <Contato />
-        <Cliente />
+      </div>
+      <div id="sobre-nos">
         <QuemSomos />
-        <Footer />
+      </div>
+      <div id="clientes">
+        <Cliente />
+      </div>
+      <div id="orcamento">
+        <Contato />
+      </div >
+      <div id="contato">
+      <Footer />
+      </div>
     </div>
   );
 };

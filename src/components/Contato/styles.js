@@ -5,6 +5,8 @@ export const ContatoSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%; /* Altura total da tela */
+  width: 100%; /* Largura total da tela */
   padding: 80px 30px;
   background: url(${ContactBackground}) no-repeat center center;
   background-size: cover;
@@ -28,17 +30,19 @@ export const ContatoSection = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding: 50px 20px;
+    padding: 20px;
+    height: 100vh;
   }
 `;
+
 
 export const FormContainer = styled.div`
   background: rgba(255, 255, 255, 0.85); /* Fundo mais claro */
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  width: 100%;
+  max-width: 400px; /* Máximo de 400px */
+  width: 100%; /* Ajusta para ocupar 100% do espaço disponível */
   z-index: 2;
   position: relative;
   margin-right: 200px;
@@ -46,14 +50,22 @@ export const FormContainer = styled.div`
   backdrop-filter: blur(8px);
 
   @media (max-width: 1024px) {
+    max-width: 90%; /* Evita ultrapassar os limites do container */
     margin-right: 0;
     margin-bottom: 20px;
   }
 
   @media (max-width: 768px) {
+    max-width: 95%; /* Ajusta para telas menores */
     padding: 20px;
   }
+
+  @media (max-width: 480px) {
+    max-width: 100%; /* Usa todo o espaço disponível */
+    padding: 15px;
+  }
 `;
+
 
 export const FormTitle = styled.h2`
   font-size: 1.8rem;

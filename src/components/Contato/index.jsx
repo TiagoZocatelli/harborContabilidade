@@ -9,11 +9,55 @@ import {
     Highlight,
     TextArea
 } from "./styles"; // Importando os estilos do styles.js
+import { useState } from "react"; // Para gerenciar o estado do formulário
 import {
     FaUser, FaEnvelope, FaBuilding, FaPhone, FaBriefcase
 } from "react-icons/fa"; // Importando ícones
 
 const Contato = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        segment: "",
+        message: ""
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSendEmail = () => {
+        const { name, email, company, phone, segment, message } = formData;
+        const subject = `Contato de ${name} - ${company}`;
+        const body = `
+            Nome: ${name}
+            Email: ${email}
+            Telefone: ${phone}
+            Segmento: ${segment}
+            Mensagem:
+            ${message}
+        `;
+
+        // Abrir no Gmail
+        const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=douglas@harborcontabilidade.com.br&su=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+        window.open(gmailLink, "_blank"); // Abre o Gmail em uma nova aba
+
+        // Zerar os campos do formulário
+        setFormData({
+            name: "",
+            email: "",
+            company: "",
+            phone: "",
+            segment: "",
+            message: ""
+        });
+    };
+
     return (
         <ContatoSection>
             <ContactMessage>
@@ -27,28 +71,63 @@ const Contato = () => {
                 <FormTitle>Entre em Contato</FormTitle>
                 <InputGroup>
                     <FaUser />
-                    <Input type="text" placeholder="Seu Nome" />
+                    <Input
+                        type="text"
+                        name="name"
+                        placeholder="Seu Nome"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                    />
                 </InputGroup>
                 <InputGroup>
                     <FaEnvelope />
-                    <Input type="email" placeholder="Seu E-mail" />
+                    <Input
+                        type="email"
+                        name="email"
+                        placeholder="Seu E-mail"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                    />
                 </InputGroup>
                 <InputGroup>
                     <FaBuilding />
-                    <Input type="text" placeholder="Nome da Empresa" />
+                    <Input
+                        type="text"
+                        name="company"
+                        placeholder="Nome da Empresa"
+                        value={formData.company}
+                        onChange={handleInputChange}
+                    />
                 </InputGroup>
                 <InputGroup>
                     <FaPhone />
-                    <Input type="tel" placeholder="Número de Telefone" />
+                    <Input
+                        type="tel"
+                        name="phone"
+                        placeholder="Número de Telefone"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                    />
                 </InputGroup>
                 <InputGroup>
                     <FaBriefcase />
-                    <Input type="text" placeholder="Segmento da Empresa" />
+                    <Input
+                        type="text"
+                        name="segment"
+                        placeholder="Segmento da Empresa"
+                        value={formData.segment}
+                        onChange={handleInputChange}
+                    />
                 </InputGroup>
                 <InputGroup>
-                    <TextArea placeholder="Sua Mensagem" />
+                    <TextArea
+                        name="message"
+                        placeholder="Sua Mensagem"
+                        value={formData.message}
+                        onChange={handleInputChange}
+                    />
                 </InputGroup>
-                <SubmitButton>Enviar</SubmitButton>
+                <SubmitButton onClick={handleSendEmail}>Enviar</SubmitButton>
             </FormContainer>
         </ContatoSection>
     );

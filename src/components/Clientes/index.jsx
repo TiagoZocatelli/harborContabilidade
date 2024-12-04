@@ -18,26 +18,26 @@ const Cliente = () => {
     return (
         <ClientesSection>
             <ContentContainer>
-                <Title>Atendendo Mais de 200 Clientes em Todo o Brasil</Title>
+                <Title>Atendendo Mais de 200 Clientes<br /> em Todo o Brasil</Title>
                 <Description>
                     Com mais de <HighlightedText>20 anos de experiência</HighlightedText>, atendemos diversas empresas em segmentos variados como varejo, logística, tecnologia, e muitas outras. Nosso compromisso é oferecer soluções personalizadas que ajudam nossos clientes a alcançar o sucesso.
                 </Description>
                 <StatsContainer>
                     <StatCard>
                         <StatNumber>
-                           <FaUsers /> 200+
+                           <FaUsers /> <h4>200+</h4>
                         </StatNumber>
                         <StatDescription>Clientes Atendidos</StatDescription>
                     </StatCard>
                     <StatCard>
                         <StatNumber>
-                            <BiSolidCalendarCheck  /> 20+
+                            <BiSolidCalendarCheck  /> <h4>20+</h4>
                         </StatNumber>
                         <StatDescription>Anos de Experiência</StatDescription>
                     </StatCard>
                     <StatCard>
                         <StatNumber>
-                            <FaSmile/> 100%
+                            <FaSmile/> <h4>100%</h4>
                         </StatNumber>
                         <StatDescription>Satisfação Garantida</StatDescription>
                     </StatCard>
