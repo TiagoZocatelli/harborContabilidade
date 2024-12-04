@@ -19,7 +19,7 @@ export const Layout = styled.div`
   min-height: 100vh;
   background: linear-gradient(
     135deg,
-    #0a2e65,
+    #163965,
     #102c57
   ); /* Gradiente de fundo */
   color: #ffffff;
@@ -79,7 +79,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center; /* Centraliza os itens verticalmente */
   justify-content: space-between; /* Espaça os itens horizontalmente */
-  background-color: #0a2e65; /* Fundo branco */
+  background-color: #ffffff; /* Fundo branco */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para separação */
   z-index: 1000; /* Garante que o nav fique acima de outros elementos */
   transition: all 0.3s ease; /* Suaviza mudanças de altura ou opacidade */
@@ -108,7 +108,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  height: 160px;
+  height: 140px;
   width: auto;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)); /* Sombra leve */
   transition: transform 0.3s ease;
@@ -130,7 +130,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  color: #ffffff; /* Texto escuro para contraste com o fundo branco */
+  color: #163965; /* Texto escuro para contraste com o fundo branco */
   font-size: 1.3rem;
   cursor: pointer;
   font-weight: 500;
@@ -139,7 +139,7 @@ export const NavItem = styled.li`
   transition: color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    color: #daa520; /* Dourado no hover */
+    color:  #A9782B; /* Dourado no hover */
     transform: translateY(-4px); /* Leve elevação no hover */
   }
 
@@ -174,7 +174,7 @@ export const NavItem = styled.li`
 
 export const MainTitle = styled.h1`
   font-family: "Poppins", sans-serif;
-  color: #daa520;
+  color: #ffffff;
   font-size: 3.5rem;
   font-weight: 800;
   text-align: center;
@@ -219,7 +219,7 @@ export const Button = styled.button`
   font-size: 1.1rem;
   font-weight: 600;
   color: #ffffff;
-  background: linear-gradient(145deg, #daa520, #ffc107); /* Gradiente dourado */
+  background: linear-gradient(145deg, #A9782B, #A9782B); /* Gradiente dourado */
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -267,8 +267,8 @@ export const Aside = styled.aside`
   height: 100vh;
   background: linear-gradient(
     135deg,
-    #0a2e65,
-    #0a2e65
+    #ffffff,
+    #ffffff
   ); /* Gradiente com base na cor principal */
   padding: 40px 30px;
   transition: left 0.3s ease, box-shadow 0.3s ease;
@@ -314,12 +314,12 @@ export const LogoAside = styled.img`
 export const AsideItem = styled.li`
   border-radius: 15px;
   padding: 15px;
-  color: #ffffff; /* Branco puro para o texto */
+  color: #163965; /* Branco puro para o texto */
   font-size: 1.2rem; /* Fonte maior para maior impacto */
   font-weight: 700; /* Mais negrito para destaque */
   cursor: pointer;
   position: relative;
-  background: #0a2e65; /* Fundo com a cor principal */
+  background: #ffffff; /* Fundo com a cor principal */
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Alinha os itens à esquerda */
@@ -328,9 +328,10 @@ export const AsideItem = styled.li`
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
 
   &:hover {
-    background: #0d3c89; /* Leve clareamento no hover */
+    background:  #163965; /* Leve clareamento no hover */
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
   }
 `;
 

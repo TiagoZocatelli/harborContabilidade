@@ -57,7 +57,7 @@ export const Description = styled.p`
 
 // Texto destacado (HighlightedText)
 export const HighlightedText = styled.span`
-  color: #daa520;
+  color:  #A9782B;
   font-weight: bold;
 `;
 
@@ -77,7 +77,7 @@ export const StatsContainer = styled.div`
 
 // Cartão de estatísticas individuais
 export const StatCard = styled.div`
-  background-color: #0a2e65;
+  background-color:  #163965;
   padding: 20px 30px;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -111,7 +111,7 @@ export const StatNumber = styled.h3`
 
   svg {
     margin-right: 10px;
-    color: #daa520;
+    color:  #A9782B;
   }
 
   @media (max-width: 768px) {
@@ -152,7 +152,7 @@ export const Segment = styled.div`
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #0a2e65;
+  color: #163965;
 
   &:hover {
     transform: translateY(-8px);
@@ -172,7 +172,7 @@ export const Segment = styled.div`
   p {
     font-size: 0.9rem;
     line-height: 1.6;
-    color: #0a2e65; /* Azul acinzentado claro */
+    color: #163965; /* Azul acinzentado claro */
 
     @media (max-width: 768px) {
       font-size: 1rem;
@@ -181,7 +181,7 @@ export const Segment = styled.div`
 
   svg {
     font-size: 2rem;
-    color: #daa520;
+    color:   #A9782B;
     margin-bottom: 10px;
   }
 `;

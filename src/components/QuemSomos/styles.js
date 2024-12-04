@@ -39,7 +39,7 @@ export const QuemSomosTitle = styled.h2`
     margin-bottom: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #DAA520;
+    color:  #A9782B;
     margin-top: 40px; /* Adicionado para evitar sobreposição no topo */
 
     @media (max-width: 768px) {
@@ -62,7 +62,7 @@ export const QuemSomosDescription = styled.p`
 `;
 
 export const Highlight = styled.span`
-    color: #DAA520;
+    color: #A9782B;
     font-weight: bold;
 `;
 

@@ -111,7 +111,7 @@ export const Input = styled.input`
   &:focus {
     border-color: #DAA520;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 8px #DAA520;
+    box-shadow: 0 0 8px  #A9782B;
     outline: none;
   }
 
@@ -136,7 +136,7 @@ export const TextArea = styled.textarea`
   &:focus {
     border-color: #DAA520;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 8px #DAA520;
+    box-shadow: 0 0 8px  #A9782B;
     outline: none;
   }
 
@@ -149,7 +149,7 @@ export const TextArea = styled.textarea`
 export const SubmitButton = styled.button`
   width: 100%;
   padding: 12px;
-  background: #DAA520;
+  background:  #A9782B;
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -203,7 +203,7 @@ export const ContactMessage = styled.div`
 `;
 
 export const Highlight = styled.span`
-  color: #DAA520;
+  color:  #A9782B;
   font-weight: bold;
   transition: color 0.3s ease;
 

@@ -24,7 +24,7 @@ export const TitleIconWrapper = styled.div`
 export const Title = styled.h2`
   font-size: 3rem;
   font-weight: 700;
-  color: #0a2e65;
+  color: #163965;
   text-transform: uppercase;
   
   @media (max-width: 1024px) {
@@ -101,7 +101,7 @@ export const ServiceDescription = styled.p`
 export const Icon = styled.div`
   margin-bottom: 20px;
   color: #fff;
-  background-color: #0a2e65;
+  background-color: #163965;
   padding: 20px;
   border-radius: 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

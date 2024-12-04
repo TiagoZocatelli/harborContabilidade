@@ -15,7 +15,7 @@ const Servicos = () => {
     return (
         <ServicosSection>
             <TitleIconWrapper>
-                <FaBriefcase size={50} color="#DAA520" />
+                <FaBriefcase size={50} color="#A9782B" />
                 <Title>Nossos Serviços</Title>
             </TitleIconWrapper>
             <Description>

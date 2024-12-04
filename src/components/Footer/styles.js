@@ -50,9 +50,9 @@ export const FooterSection = styled.div`
 export const FooterTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #DAA520;
+  color:  #A9782B;
   font-weight: bold;
-  border-bottom: 2px solid #DAA520;
+  border-bottom: 2px solid  #A9782B;
   padding-bottom: 8px;
 
   @media (max-width: 768px) {
@@ -84,8 +84,8 @@ export const InstagramLink = styled.a`
   box-shadow: 0 2px 0 transparent;
 
   &:hover {
-    color: #DAA520;
-    box-shadow: 0 2px 0 #DAA520;
+    color:  #A9782B;
+    box-shadow: 0 2px 0  #A9782B;
   }
 
   @media (max-width: 768px) {
@@ -142,8 +142,8 @@ export const AddressLink = styled.a`
   box-shadow: 0 2px 0 transparent;
 
   &:hover {
-    color: #DAA520;
-    box-shadow: 0 2px 0 #DAA520;
+    color:  #A9782B;
+    box-shadow: 0 2px 0  #A9782B;
   }
 
   @media (max-width: 768px) {
@@ -166,8 +166,8 @@ export const EmailLink = styled.a`
   box-shadow: 0 2px 0 transparent;
 
   &:hover {
-    color: #DAA520;
-    box-shadow: 0 2px 0 #DAA520;
+    color:  #A9782B;
+    box-shadow: 0 2px 0  #A9782B;
   }
 
   /* Remove essa parte, pois o ícone é controlado globalmente */
