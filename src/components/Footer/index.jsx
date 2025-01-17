@@ -51,7 +51,7 @@ const Footer = () => {
               </WhatsAppLink>
             </FooterInfo>
             <FooterInfo>
-              <FaPhone /> (44) 3354-2845 
+              <FaPhone /> (44) 3354-2844 
             </FooterInfo>
             <FooterInfo>
               <FaClock /> Atendimento: 7:30 às 17:30 (Segunda a Sexta)

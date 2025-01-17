@@ -41,7 +41,7 @@ export const Title = styled.h2`
 `;
 
 export const Description = styled.p`
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 2;
   color: #555555;
   max-width: 800px;
@@ -69,7 +69,7 @@ export const ServicesList = styled.div`
 export const ServiceCard = styled.div`
   cursor: pointer;
   background: #ffffff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   color: #0a192f;
@@ -93,7 +93,7 @@ export const ServiceTitle = styled.h3`
 `
 
 export const ServiceDescription = styled.p`
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #444444;
   line-height: 1.8;
 `;

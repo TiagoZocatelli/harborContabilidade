@@ -1,18 +1,19 @@
-import {
-    ContatoSection,
-    FormContainer,
-    FormTitle,
-    InputGroup,
-    Input,
-    SubmitButton,
-    ContactMessage,
-    Highlight,
-    TextArea
-} from "./styles"; // Importando os estilos do styles.js
-import { useState } from "react"; // Para gerenciar o estado do formulário
-import {
-    FaUser, FaEnvelope, FaBuilding, FaPhone, FaBriefcase
-} from "react-icons/fa"; // Importando ícones
+import { 
+    ContatoSection, 
+    FormContainer, 
+    FormTitle, 
+    InputGroup, 
+    Input, 
+    SubmitButton, 
+    ContactMessage, 
+    Highlight, 
+    TextArea 
+} from "./styles"; 
+import { useState } from "react"; 
+import { 
+    FaUser, FaEnvelope, FaBuilding, FaPhone, FaBriefcase 
+} from "react-icons/fa"; 
+import emailjs from '@emailjs/browser';
 
 const Contato = () => {
     const [formData, setFormData] = useState({
@@ -29,33 +30,44 @@ const Contato = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSendEmail = () => {
-        const { name, email, company, phone, segment, message } = formData;
-        const subject = `Contato de ${name} - ${company}`;
-        const body = `
-            Nome: ${name}
-            Email: ${email}
-            Telefone: ${phone}
-            Segmento: ${segment}
-            Mensagem:
-            ${message}
-        `;
+    const onSubmit = async (e) => {
+        e.preventDefault();
 
-        // Abrir no Gmail
-        const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=douglas@harborcontabilidade.com.br&su=${encodeURIComponent(
-            subject
-        )}&body=${encodeURIComponent(body)}`;
-        window.open(gmailLink, "_blank"); // Abre o Gmail em uma nova aba
+        if (formData.name === '' || formData.email === '' || formData.message === '') {
+            alert("Preencha todos os campos obrigatórios");
+            return;
+        }
 
-        // Zerar os campos do formulário
-        setFormData({
-            name: "",
-            email: "",
-            company: "",
-            phone: "",
-            segment: "",
-            message: ""
-        });
+        const templateParams = {
+            from_name: formData.name,
+            email: formData.email,
+            company: formData.company,
+            phone: formData.phone,
+            segment: formData.segment,
+            message: formData.message
+        };
+
+        try {
+            const response = await emailjs.send(
+                "service_inngjzd",
+                "template_wa9z12n",
+                templateParams,
+                "V9GAmXu90Dgj7ZrIg"
+            );
+            console.log("EMAIL ENVIADO", response.status, response.text);
+            alert("E-mail enviado com sucesso!");
+            setFormData({
+                name: "",
+                email: "",
+                company: "",
+                phone: "",
+                segment: "",
+                message: ""
+            });
+        } catch (error) {
+            console.error("Erro ao enviar e-mail:", error);
+            alert("Erro ao enviar e-mail. Tente novamente mais tarde.");
+        }
     };
 
     return (
@@ -66,7 +78,7 @@ const Contato = () => {
                 Estamos prontos para ajudar sua empresa a crescer! <br /><br />
                 Entre em contato e <Highlight>transforme seus desafios em oportunidades</Highlight>.
             </ContactMessage>
-            
+
             <FormContainer>
                 <FormTitle>Entre em Contato</FormTitle>
                 <InputGroup>
@@ -127,7 +139,7 @@ const Contato = () => {
                         onChange={handleInputChange}
                     />
                 </InputGroup>
-                <SubmitButton onClick={handleSendEmail}>Enviar</SubmitButton>
+                <SubmitButton onClick={onSubmit}>Enviar</SubmitButton>
             </FormContainer>
         </ContatoSection>
     );

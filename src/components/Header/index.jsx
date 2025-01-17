@@ -30,6 +30,7 @@ import {
   FaInfoCircle,
   FaEnvelope,
 } from "react-icons/fa";
+
 import { Link } from "react-scroll";
 
 const Header = () => {
@@ -39,13 +40,15 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  
+
   return (
     <Layout>
       <HeaderSection $backgroundImage={BackgroundImage}>
         <Overlay>
           <Nav>
             <HeaderContainer>
-              <LogoImage src={Logo} alt="Logo" />
+              <a href="/"><LogoImage src={Logo} alt="Logo" /></a>
               <MenuButton onClick={toggleMenu}>
                 <Bars3Icon style={{ width: "32px", height: "32px" }} />
               </MenuButton>
@@ -94,7 +97,7 @@ const Header = () => {
         <AsideMenu>
           <LogoAside src={Logo} alt="Logo" />
           <AsideItem onClick={toggleMenu}>
-            <Link to="/" smooth={true} duration={500}>
+            <Link to="header" smooth={true} duration={500}>
               <FaHome /> Início
             </Link>
           </AsideItem>

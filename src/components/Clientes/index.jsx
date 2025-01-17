@@ -18,7 +18,7 @@ const Cliente = () => {
     return (
         <ClientesSection>
             <ContentContainer>
-                <Title>Atendendo Mais de 200 Clientes<br /> em Todo o Brasil</Title>
+                <Title>Atendemos Mais de 200 Clientes<br /> em Todo o Brasil</Title>
                 <Description>
                     Com mais de <HighlightedText>20 anos de experiência</HighlightedText>, atendemos diversas empresas em segmentos variados como varejo, logística, tecnologia, e muitas outras. Nosso compromisso é oferecer soluções personalizadas que ajudam nossos clientes a alcançar o sucesso.
                 </Description>
