@@ -1,8 +1,40 @@
-# React + Vite
+# 🌊 Harbor Contabilidade
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional desenvolvido para a **Harbor Contabilidade**, com foco em apresentação profissional, captação de clientes e divulgação de serviços contábeis.
 
-Currently, two official plugins are available:
+## 📌 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto foi criado com o objetivo de fortalecer a presença digital da empresa, oferecendo uma navegação clara, visual moderno e informações organizadas sobre os serviços contábeis.
+
+## 🚀 Funcionalidades
+
+- Página institucional responsiva  
+- Apresentação dos serviços contábeis  
+- Seção "Sobre a Empresa"  
+- Formulário de contato  
+- Integração com WhatsApp  
+- Layout moderno e otimizado para dispositivos móveis  
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- React (se aplicável)  
+- Styled Components / Tailwind (se aplicável)  
+- Hospedagem em ambiente web  
+
+## 🎯 Objetivo
+
+Prover uma vitrine digital profissional para a Harbor Contabilidade, facilitando o contato com clientes e reforçando a credibilidade da marca no meio digital.
+
+## 👨‍💻 Desenvolvido por
+
+**Tiago Zocatelli**  
+Full Stack & BI Engineer  
+📧 zokahtv@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/tiago-zocatelli-a237a62a0/
+
+---
+
+> Projeto desenvolvido com foco em performance, responsividade e experiência do usuário.
